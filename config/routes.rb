@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get("/forex/:from_symbol", {:controller => "currency", :action => "second_currency"})
 
+  get("/forex/:from_symbol/:to_symbol", {:controller => "currency", :action => "conversion"})
+
 end
